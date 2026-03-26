@@ -12,7 +12,7 @@ st.markdown("---")
 
 # ===================== CARGA DE DATOS =====================
 PROJECT_PATH = r"C:\Users\SebasM\OneDrive\Documentos\informe_desigualdad"
-ruta_excel = os.path.join(PROJECT_PATH, "base_pobreza.xlsx")
+ruta_excel = os.path.join(os.path.dirname(__file__), "base_pobreza.xlsx")
 
 if not os.path.exists(ruta_excel):
     st.error("❌ No se encontró el archivo base_pobreza.xlsx en la carpeta del proyecto.")
