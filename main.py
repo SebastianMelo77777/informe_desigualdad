@@ -11,7 +11,7 @@ st.subheader("Bogotá D.C. • Meta (Villavicencio) • Cundinamarca | 2019 - 20
 st.markdown("---")
 
 # ===================== CARGA DE DATOS =====================
-PROJECT_PATH = r"C:\Users\SebasM\OneDrive\Documentos\informe_desigualdad"
+PROJECT_PATH = pd.read_excel('base_pobreza.xlsx')
 ruta_excel = os.path.join(PROJECT_PATH, "base_pobreza.xlsx")
 
 if not os.path.exists(ruta_excel):
